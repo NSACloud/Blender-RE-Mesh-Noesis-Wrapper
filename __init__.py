@@ -15,7 +15,7 @@ import bpy
 import os
 
 from bpy_extras.io_utils import ExportHelper,ImportHelper
-from bpy.props import StringProperty, BoolProperty, CollectionProperty
+from bpy.props import StringProperty, BoolProperty, EnumProperty, CollectionProperty
 from bpy.types import Operator, OperatorFileListElement,AddonPreferences
 
 from .modules.file_re_mesh_noesis import importREMeshFileNoesis,exportREMeshFileNoesis
@@ -93,11 +93,24 @@ class ExportREMeshNoesis(Operator, ExportHelper):
     bl_idname = "re_mesh_noesis.exportfile"
     bl_label = "Export RE Mesh"
     bl_options = {'PRESET'}
-    filename_ext = ".2008058288"
+    
     filter_glob: StringProperty(default="*.mesh*", options={'HIDDEN'})
+    filename_ext: EnumProperty(
+        name="Mesh Version",
+        description="Set which game to export the mesh for",
+        items=[ (".2008058288", "MHRise", ""),
+                (".2101050001", "RE8", ""),
+                (".32", "RE7", ""),
+                (".1902042334", "RE3", ""),
+                (".1808312334", "RE2", ""),
+                (".2010231143", "REVerse", ""),
+                (".1808282334", "DMC5", ""),
+
+               ]
+        )
     #FBX Exporter Settings
     selection_only : BoolProperty(
-       name = "Export Selected Objects Only",
+       name = "Selected Only",
        description = "Limit export to selected objects",
        default = False)
     #Noesis Exporter Arguments
@@ -117,7 +130,7 @@ class ExportREMeshNoesis(Operator, ExportHelper):
        name = "Bones",
        description = "Write new skeleton on export. NOTE: Rewrite also writes new skeletons",
        default = False)
-
+    
     def execute(self, context):
         options = {"selection_only":self.selection_only,"rewrite":self.rewrite,"bonenumbers":self.bonenumbers,"flip":self.flip,"bones":self.bones}
         
