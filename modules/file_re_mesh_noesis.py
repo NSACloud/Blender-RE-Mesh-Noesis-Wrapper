@@ -43,7 +43,7 @@ def importREMeshFileNoesis(filePath,noesisPath,options):
         try:
             bpy.ops.import_scene.fbx(filepath = os.path.join(FBX_IMPORT_DIR,fileName+".fbx"))
         except Exception as error:
-            errorList.append("ERROR: FBX import failed. Check that the Noesis path is correct and that the RE Mesh plugin is installed.\n" + str(error))
+            errorList.append("ERROR: FBX import failed. Check that the Noesis path is correct and that the RE Mesh plugin is installed.\nAlso check that the correct version of the FBX patch is installed for your version of Blender.\n" + str(error))
             return (warningList,errorList)
     else:
         errorList.append("ERROR: No FBX file was created by Noesis. The mesh file may be corrupted or unreadable.")
