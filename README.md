@@ -7,7 +7,7 @@ All RE Engine games supported by the Noesis plugin are also supported by this ad
 ## Requirements
 * [Noesis](https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91)
 * [Noesis RE Mesh Plugin](https://residentevilmodding.boards.net/thread/14726/re8-mhrise-modding-tools)
-* [Blender 2.8 or higher](https://www.blender.org/download/)
+* [Blender 2.8 or higher (version 2.93.10 recommended)](https://www.blender.org/download/)
 * [Blender FBX Importer Patch](https://www.nexusmods.com/witcher3/mods/6118)
 
 ## Setting Up
@@ -19,7 +19,7 @@ Install Noesis anywhere. Extract the Noesis RE Mesh Plugin from the download. Th
 
 Install Blender if it isn't installed already. Back up the folder located at: ***Blender Install Folder*/*Blender Version*/scripts/addons/io_scene_fbx**
 
-Drag the files from the FBX Importer patch into that folder.
+Drag the files from the FBX Importer patch into that folder. Make sure you downloaded the correct version for your Blender version.
 
 In Blender, navigate to File > Preferences > Addons > Install From Zip File, then select the zip file for the RE Mesh Wrapper. Make sure the box next to the addon is checked, then set the Noesis.exe path in the addon preferences.
 
@@ -28,6 +28,10 @@ In Blender, navigate to File > Preferences > Addons > Install From Zip File, the
 You should now be able to import and export RE Meshes via the File > Import or Export menus.
 
 ## Important Info
+**NOTE: If you get the "Failed to Import RE Mesh" error, you likely have the wrong version of FBX Importer Patch.** 
+
+**You need to use the version of the patch compatible with the version of Blender you're using.**
+
 Any problems with exporting meshes are issues with the Noesis plugin, not this addon. 
 
 Direct any problems you're having to the [RE Mesh plugin page](https://residentevilmodding.boards.net/thread/14726/re8-mhrise-modding-tools) unless you're positive it's an issue with this addon.
