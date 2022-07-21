@@ -6,7 +6,7 @@ All RE Engine games supported by the Noesis plugin are also supported by this ad
 ![Blender Preview](https://github.com/mhvuze/MonsterHunterRiseModding/blob/main/img/guides/models/REMeshNoesisWrapper/REMESH_wrapper_preview.png)
 ## Requirements
 * [Noesis](https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91)
-* [Noesis RE Mesh Plugin](https://residentevilmodding.boards.net/thread/14726/re8-mhrise-modding-tools)
+* [Noesis RE Mesh Plugin](https://github.com/alphazolam/fmt_RE_MESH-Noesis-Plugin)
 * [Blender 2.8 or higher (version 2.93.10 recommended)](https://www.blender.org/download/)
 * [Blender FBX Importer Patch](https://www.nexusmods.com/witcher3/mods/6118)
 
