@@ -103,10 +103,10 @@ def exportREMeshFileNoesis(filePath,noesisPath,options):
                 #Check that naming scheme is valid
             split = obj.name.split("_")
             try:
-                if split[0].split("_")[0] != "LODGroup" or split[2].split("_")[0] != "MainMesh" or split[4].split("_")[0] != "SubMesh" or split[6].split("_")[0] != "":
-                    warningList.append("WARNING: "+obj.name + " does not match the Noesis plugin mesh naming scheme:\n\t LODGroup_X_MainMesh_Y_SubMesh_Z__materialName")
+                if split[0].split("_")[0] != "LODGroup" or split[2].split("_")[0] != "Group" or split[4].split("_")[0] != "SubMesh" or split[6].split("_")[0] != "":
+                    warningList.append("WARNING: "+obj.name + " does not match the Noesis plugin mesh naming scheme:\n\t LODGroup_X_Group_Y_SubMesh_Z__materialName")
             except:
-                warningList.append("WARNING: "+obj.name + " does not match the Noesis plugin mesh naming scheme:\n\tLODGroup_X_MainMesh_Y_SubMesh_Z__materialName")
+                warningList.append("WARNING: "+obj.name + " does not match the Noesis plugin mesh naming scheme:\n\tLODGroup_X_Group_Y_SubMesh_Z__materialName")
         elif obj.type == "ARMATURE":
             #Get amount of armatures in selection
             armatureCount += 1
@@ -128,6 +128,8 @@ def exportREMeshFileNoesis(filePath,noesisPath,options):
             args += " -flip"
         if options["bones"]:
             args += " -bones"
+        if options["adv"]:
+            args += " -adv"
         if os.path.exists(os.path.join(FBX_EXPORT_DIR,fileName+".fbx")):
             noesisCommand = "\""+noesisPath + "\" ?cmode " +"\"" + os.path.join(FBX_EXPORT_DIR,fileName+".fbx") + "\" " + "\""+filePath+ "\"" + args
             print("Running Noesis...")

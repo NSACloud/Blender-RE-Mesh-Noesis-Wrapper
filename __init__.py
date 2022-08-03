@@ -2,7 +2,7 @@
 bl_info = {
     "name": "RE Mesh Noesis Wrapper",
     "author": "NSA Cloud",
-    "version": (3, 0),
+    "version": (4, 0),
     "blender": (2, 93, 0),
     "location": "File > Import-Export",
     "description": "Import and export RE Engine Mesh files using Noesis.",
@@ -133,9 +133,13 @@ class ExportREMeshNoesis(Operator, ExportHelper):
        name = "Bones",
        description = "Write new skeleton on export. NOTE: Rewrite also writes new skeletons",
        default = False)
+    adv : BoolProperty(
+       name = "Show Advanced",
+       description = "Show advanced export options window",
+       default = False)
     
     def execute(self, context):
-        options = {"selection_only":self.selection_only,"rewrite":self.rewrite,"bonenumbers":self.bonenumbers,"flip":self.flip,"bones":self.bones}
+        options = {"selection_only":self.selection_only,"rewrite":self.rewrite,"bonenumbers":self.bonenumbers,"flip":self.flip,"bones":self.bones,"adv":self.adv}
         
         if os.path.isfile(bpy.context.preferences.addons[__name__].preferences.noesisPath.replace("\"","")):
             

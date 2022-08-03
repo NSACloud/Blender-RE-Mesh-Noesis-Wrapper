@@ -40,7 +40,7 @@ Materials are not imported. You will have to convert the textures using Tex Chop
 
 The naming scheme of meshes must match the Noesis plugin format: 
 
-**LODGroup_X_MainMesh_Y_SubMesh_Z__materialName**
+**LODGroup_X_Group_Y_SubMesh_Z__materialName**
 
 The number and names of materials must match the .mdf2 file or you will get checkerboard patterns on the mesh in game.
 
