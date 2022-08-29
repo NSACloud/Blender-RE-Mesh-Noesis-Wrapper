@@ -7,7 +7,7 @@ All RE Engine games supported by the Noesis plugin are also supported by this ad
 ## Requirements
 * [Noesis](https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91)
 * [Noesis RE Mesh Plugin](https://github.com/alphazolam/fmt_RE_MESH-Noesis-Plugin)
-* [Blender 2.8 or higher (version 2.93.10 recommended)](https://www.blender.org/download/)
+* [Blender 2.8 or higher (version 2.93.0 recommended)](https://www.blender.org/download/)
 * [Blender FBX Importer Patch](https://www.nexusmods.com/witcher3/mods/6118)
 
 ## Setting Up
@@ -47,3 +47,8 @@ The number and names of materials must match the .mdf2 file or you will get chec
 For a more in depth guide on usage of this addon, see here:
 
 https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Importing-and-Editing-Models-with-Blender-(Noesis)
+
+
+**See Also:**
+
+https://github.com/NSACloud/RE-Chain-Editor
