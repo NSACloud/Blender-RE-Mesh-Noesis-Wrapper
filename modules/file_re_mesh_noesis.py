@@ -167,8 +167,8 @@ def exportREMeshFileNoesis(filePath,noesisPath,options):
 			#print(noesisCommand)
 			subprocess.run(noesisCommand,shell=True)
 			try:
-				#os.remove(os.path.join(FBX_EXPORT_DIR,fileName+".fbx"))
-				pass
+				os.remove(os.path.join(FBX_EXPORT_DIR,fileName+".fbx"))
+				#pass
 			except:
 				warningList.append("WARNING: Failed to delete temporary FBX from TempFBX directory.")
 			print("\033[92m__________________________________\nRE Mesh export finished.\033[0m")
