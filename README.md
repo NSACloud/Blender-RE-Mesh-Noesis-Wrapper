@@ -32,7 +32,7 @@ You should now be able to import and export RE Meshes via the File > Import or E
 
 **You need to use the version of the patch compatible with the version of Blender you're using.**
 
-Any problems with exporting meshes are issues with the Noesis plugin, not this addon. 
+Any problems with exporting meshes are issues with the Noesis plugin or Blender itself, not this addon. 
 
 Direct any problems you're having to the [RE Mesh plugin page](https://residentevilmodding.boards.net/thread/14726/re8-mhrise-modding-tools) unless you're positive it's an issue with this addon.
 
@@ -48,6 +48,14 @@ For a more in depth guide on usage of this addon, see here:
 
 https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Importing-and-Editing-Models-with-Blender-(Noesis)
 
+### Secondary UV Map Issue
+The secondary UV map will break upon exporting from Blender. This is an issue with Blender's FBX exporter.
+
+If you need to be able to export the second UV map, you can buy the [Better FBX Importer/Exporter](https://www.blendermarket.com/products/better-fbx-importer--exporter) addon.
+
+This is only as a last resort though and I wouldn't recommend it unless you really need the secondary UV.
+
+Enable "Use Better FBX Addon" in the addon preferences to use it with the wrapper.
 
 **See Also:**
 
