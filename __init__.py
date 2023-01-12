@@ -2,7 +2,7 @@
 bl_info = {
 	"name": "RE Mesh Noesis Wrapper",
 	"author": "NSA Cloud",
-	"version": (5, 0),
+	"version": (5, 1),
 	"blender": (2, 93, 0),
 	"location": "File > Import-Export",
 	"description": "Import and export RE Engine Mesh files using Noesis.",
@@ -38,7 +38,7 @@ class REMeshNoesisWrapperPreferences(AddonPreferences):
 	)
 	useBetterFBX: BoolProperty(
 		name="Use Better FBX Addon (Requires Better FBX)",
-		description = "Use Better FBX Importer / Exporter addon instead of Blender's default fbx exporter. Do not enable if Better FBX is not installed",
+		description = "Use Better FBX Importer / Exporter addon instead of Blender's default fbx exporter. Do not enable if Better FBX is not installed. WARNING: Export is bugged and chain files will not work properly",
 		default = False
 	)
 	def draw(self, context):

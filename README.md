@@ -7,7 +7,7 @@ All RE Engine games supported by the Noesis plugin are also supported by this ad
 ## Requirements
 * [Noesis](https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91)
 * [Noesis RE Mesh Plugin](https://github.com/alphazolam/fmt_RE_MESH-Noesis-Plugin)
-* [Blender 2.8 or higher (version 2.93.0 recommended)](https://www.blender.org/download/)
+* [Blender Version 2.93.0 or 3.1.2](https://www.blender.org/download/)
 * [Blender FBX Importer Patch](https://www.nexusmods.com/witcher3/mods/6118)
 
 ## Setting Up
@@ -51,11 +51,16 @@ https://github.com/mhvuze/MonsterHunterRiseModding/wiki/Importing-and-Editing-Mo
 ### Secondary UV Map Issue
 The secondary UV map will break upon exporting from Blender. This is an issue with Blender's FBX exporter.
 
-If you need to be able to export the second UV map, you can buy the [Better FBX Importer/Exporter](https://www.blendermarket.com/products/better-fbx-importer--exporter) addon.
+~~If you need to be able to export the second UV map, you can buy the [Better FBX Importer/Exporter](https://www.blendermarket.com/products/better-fbx-importer--exporter) addon.~~
 
-This is only as a last resort though and I wouldn't recommend it unless you really need the secondary UV.
+~~This is only as a last resort though and I wouldn't recommend it unless you really need the secondary UV.~~
 
-Enable "Use Better FBX Addon" in the addon preferences to use it with the wrapper.
+~~Enable "Use Better FBX Addon" in the addon preferences to use it with the wrapper.~~
+
+
+### UPDATE: Using the Better FBX Addon Importer/Exporter is not advised. It will cause issues with physics bones.
+
+This is not to be confused with the [FBX patch](https://www.nexusmods.com/witcher3/mods/6118) (which is required). They are two separate things.
 
 **See Also:**
 

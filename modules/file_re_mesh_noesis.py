@@ -117,7 +117,7 @@ def exportREMeshFileNoesis(filePath,noesisPath,options):
 				#Check that naming scheme is valid
 			split = obj.name.split("_")
 			try:
-				if split[0].split("_")[0] != "LODGroup" or split[2].split("_")[0] != "Group" or split[4].split("_")[0] != "SubMesh" or split[6].split("_")[0] != "":
+				if "LOD" not in split[0].split("_")[0] or split[2].split("_")[0] != "Group" or "Sub" not in split[4].split("_")[0] or split[6].split("_")[0] != "":
 					warningList.append("WARNING: "+obj.name + " does not match the Noesis plugin mesh naming scheme:\n\t LODGroup_X_Group_Y_SubMesh_Z__materialName")
 			except:
 				warningList.append("WARNING: "+obj.name + " does not match the Noesis plugin mesh naming scheme:\n\tLODGroup_X_Group_Y_SubMesh_Z__materialName")
@@ -131,6 +131,7 @@ def exportREMeshFileNoesis(filePath,noesisPath,options):
 	if errorList == []:
 		if options["useBetterFBX"]:
 			print("Exporting using Better FBX Exporter")
+			warningList.append("Chain files will not work properly when using Better FBX!")
 			if "better_fbx" in bpy.context.preferences.addons.keys():
 				bpy.ops.object.mode_set(mode='OBJECT')
 				bpy.ops.better_export.fbx(filepath=os.path.join(FBX_EXPORT_DIR,fileName+".fbx"),
