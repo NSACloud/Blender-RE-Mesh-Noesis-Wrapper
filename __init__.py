@@ -2,7 +2,7 @@
 bl_info = {
 	"name": "RE Mesh Noesis Wrapper",
 	"author": "NSA Cloud",
-	"version": (5, 1),
+	"version": (6, 0),
 	"blender": (2, 93, 0),
 	"location": "File > Import-Export",
 	"description": "Import and export RE Engine Mesh files using Noesis.",
@@ -108,10 +108,12 @@ class ExportREMeshNoesis(Operator, ExportHelper):
 				(".2101050001", "RE8", ""),
 				(".220128762", "RE7 RT Update", ""),
 				(".32", "RE7", ""),
+				(".221108797", "RE4", ""),
 				(".2109108288", "RE2/RE3 RT Update", ""),
 				(".1902042334", "RE3", ""),
 				(".1808312334", "RE2", ""),
 				(".2010231143", "REVerse", ""),
+				(".220721329", "SF6", ""),
 				(".1808282334", "DMC5", ""),
 
 			   ]
