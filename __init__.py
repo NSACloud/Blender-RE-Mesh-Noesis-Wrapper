@@ -2,7 +2,7 @@
 bl_info = {
 	"name": "RE Mesh Noesis Wrapper",
 	"author": "NSA Cloud",
-	"version": (6, 0),
+	"version": (7, 0),
 	"blender": (2, 93, 0),
 	"location": "File > Import-Export",
 	"description": "Import and export RE Engine Mesh files using Noesis.",
@@ -103,8 +103,7 @@ class ExportREMeshNoesis(Operator, ExportHelper):
 	filename_ext: EnumProperty(
 		name="Mesh Version",
 		description="Set which game to export the mesh for",
-		items=[ (".2109148288", "MHRise (Post Sunbreak)", ""),
-				(".2008058288", "MHRise (Pre Sunbreak)", ""),
+		items=[ (".2109148288", "MHRise", ""),
 				(".2101050001", "RE8", ""),
 				(".220128762", "RE7 RT Update", ""),
 				(".32", "RE7", ""),
@@ -113,7 +112,8 @@ class ExportREMeshNoesis(Operator, ExportHelper):
 				(".1902042334", "RE3", ""),
 				(".1808312334", "RE2", ""),
 				(".2010231143", "REVerse", ""),
-				(".220721329", "SF6", ""),
+				(".220721329", "ExoPrimal", ""),
+				(".230110883", "SF6", ""),
 				(".1808282334", "DMC5", ""),
 
 			   ]

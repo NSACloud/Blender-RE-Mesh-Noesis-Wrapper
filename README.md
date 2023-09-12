@@ -7,7 +7,7 @@ All RE Engine games supported by the Noesis plugin are also supported by this ad
 ## Requirements
 * [Noesis](https://richwhitehouse.com/index.php?content=inc_projects.php&showproject=91)
 * [Noesis RE Mesh Plugin](https://github.com/alphazolam/fmt_RE_MESH-Noesis-Plugin)
-* [Blender Version 2.93.0 or 3.1.2](https://www.blender.org/download/)
+* [Blender 3.1.2 (Direct Download Link)](https://download.blender.org/release/Blender3.1/blender-3.1.2-windows-x64.msi)
 * [Blender FBX Importer Patch](https://www.nexusmods.com/witcher3/mods/6118)
 
 ## Setting Up
