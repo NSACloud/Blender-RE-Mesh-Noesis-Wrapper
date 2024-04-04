@@ -2,7 +2,7 @@
 bl_info = {
 	"name": "RE Mesh Noesis Wrapper",
 	"author": "NSA Cloud",
-	"version": (7, 0),
+	"version": (8, 0),
 	"blender": (2, 93, 0),
 	"location": "File > Import-Export",
 	"description": "Import and export RE Engine Mesh files using Noesis.",
@@ -104,6 +104,7 @@ class ExportREMeshNoesis(Operator, ExportHelper):
 		name="Mesh Version",
 		description="Set which game to export the mesh for",
 		items=[ (".2109148288", "MHRise", ""),
+				(".231011879", "DD2", ""),
 				(".2101050001", "RE8", ""),
 				(".220128762", "RE7 RT Update", ""),
 				(".32", "RE7", ""),
