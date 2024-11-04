@@ -1,3 +1,6 @@
+#
+## ** NOTE: This addon is obsolete, use [RE Mesh Editor](https://github.com/NSACloud/RE-Mesh-Editor) instead. **
+
 # Blender RE Mesh Noesis Wrapper
 This addon utilizes the Noesis RE Mesh plugin to import and export RE Engine mesh files directly to Blender.
 
